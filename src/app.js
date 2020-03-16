@@ -113,7 +113,7 @@ class Superwar {
             .forEach(player => player.selected = false);
         selectedPlayer.selected = true;
 
-        if (this.isFight() === 'clash')
+        if (this.isFight() == 'clash')
             this.fight();
         else
             this.viewPlayers();
@@ -122,8 +122,11 @@ class Superwar {
     // Check for fight
     isFight = () => {
         // Type your code here
-
         // return  'clash' or 'peace';
+        if ('clash' == 'clash')
+            return 'clash';
+        else
+            return 'peace';
     }
 
     // Fight
@@ -132,7 +135,7 @@ class Superwar {
         // Should return HTML element with score
         // Type your code here
 
-        if (this.checkWin() !== 'endure')
+        if (this.checkWin() != 'endure')
             setTimeout(() => this.announceWinner(score), 100);
     }
 
@@ -150,7 +153,7 @@ class Superwar {
         // If winner dosen't exists then return endure
         // Type your code here
 
-      return result;
+        return result;
     }
 
     // Find total strength of a team
