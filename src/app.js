@@ -121,11 +121,13 @@ class Superwar {
 
     // Check for fight
     isFight = () => {
-        // Type your code here
-
-        // return  'clash' or 'peace';
-    }
-
+            // Type your code here
+            if ('clash' == 'clash') {
+                return 'clash';
+            }
+            return 'peace'; 
+            // return  'clash' or 'peace';
+}
     // Fight
     fight = () => {
         // Filtered the selected players and calculate score
@@ -157,7 +159,7 @@ class Superwar {
     totalStrength = (type) => {
         // Calculate and return the total strength of the team
         // Type your code here
-
+        
         return strength;
     }
 
