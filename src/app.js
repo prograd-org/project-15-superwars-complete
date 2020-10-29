@@ -120,10 +120,13 @@ class Superwar {
     }
 
     // Check for fight
-    isFight = () => {
+    isFight = (player) => {
         // Type your code here
-
-        // return  'clash' or 'peace';
+        if (player.strength > 0)
+            return 'clash';
+        else
+            return 'peace'
+                // return  'clash' or 'peace';
     }
 
     // Fight
@@ -141,6 +144,11 @@ class Superwar {
         // Calculate and return the total score of teams
         // Type your code here
 
+        let score = 0;
+        score = team.map(function(team) {
+            score += team.strength;
+        })
+
         return score;
     }
 
@@ -148,15 +156,28 @@ class Superwar {
     checkWin = () => {
         // Find the winner if exists return type hero or villain
         // If winner dosen't exists then return endure
-        // Type your code here
+        // Type your code herelet max = 0;
+        for (var i = 0; i < length.type; i++) {
+            if (strength > max) {
+                return result = player.type;
+            } else {
+                return result = endure;
+            }
+        }
 
-      return result;
+        return result;
     }
+
+
 
     // Find total strength of a team
     totalStrength = (type) => {
         // Calculate and return the total strength of the team
         // Type your code here
+        let sum = 0;
+        for (var i = 0; i < length.type; i++) {
+            type.strength += sum;
+        }
 
         return strength;
     }
