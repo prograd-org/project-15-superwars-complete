@@ -21,7 +21,6 @@ const PLAYERS = [
     "Slingo"
 ];
 
-// Player Class
 class Player {
     constructor(id, name, type) {
         this.id = id;
@@ -31,6 +30,7 @@ class Player {
         this.type = type;
         this.selected = false;
         this.wins = 0;
+        
     }
 
     // Get random strength
