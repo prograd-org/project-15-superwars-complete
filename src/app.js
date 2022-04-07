@@ -203,3 +203,4 @@ window.onload = () => {
     const superwar = new Superwar(PLAYERS);
     superwar.viewPlayers();
 }
+ 
